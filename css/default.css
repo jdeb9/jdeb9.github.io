@@ -31,15 +31,36 @@ header, body, main {
   font-weight: 300;
 }
 
-/* card text resizing */
+/* card resizing */
 @media only screen and (min-width : 992px) {
-  .card-content {
-    font-size: 1vw;
+  .about-me-card {
+    width: 120px;
+    float: left;
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (min-width : 600px) and (max-width : 992px){
+  .about-me-card {
+    width: 120px;
+    float: left;
+    margin-left: 20px;
   }
 }
 
 @media only screen and (max-width : 600px) {
+  .about-me-card {
+    width: 28%;
+    float: left;
+    margin-left: 20px;
+  }
   .card-content {
     font-size: 3vw;
   }
+}
+
+.follow-button {
+  width: 50px;
+  float: left;
+  margin-right: 10px;
 }
