@@ -14,6 +14,16 @@ $(document).ready(function(){
 
 });
 
-function updatePage(content) {
-  $("#page-content").replaceWith(content);
+function updatePage(title, content) {
+  //hide title
+  $( "#page-title" ).fadeOut( 200, function() {});
+
+  //hide content
+  $( "#main-page-content" ).fadeOut( 200, function() {
+    //update content
+    $( "#page-title" ).html(title);
+    $("#page-content").html(content);
+    $( "#page-title" ).fadeIn( 300, function() {});
+    $( "#main-page-content" ).fadeIn( 300, function(){});
+  });
 }
