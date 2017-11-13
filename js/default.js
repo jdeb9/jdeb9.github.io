@@ -13,3 +13,7 @@ $(document).ready(function(){
   );
 
 });
+
+function updatePage(content) {
+  $("#page-content").replaceWith(content);
+}
