@@ -1,6 +1,6 @@
 
 /* offset for mobile scaling with sidenav */
-header, body, main, footer {
+header, body, main {
   padding-left: 300px;
 }
 
