@@ -17,13 +17,16 @@ $(document).ready(function(){
 function updatePage(title, content) {
   //hide title
   $( "#page-title" ).fadeOut( 200, function() {});
+  $( "#standard-footer" ).fadeOut( 200, function() {});
 
   //hide content
-  $( "#main-page-content" ).fadeOut( 200, function() {
+  $( "#page-content" ).fadeOut( 200, function() {
     //update content
     $( "#page-title" ).html(title);
-    $("#page-content").html(content);
+    $( "#page-content" ).html(content);
+
     $( "#page-title" ).fadeIn( 300, function() {});
-    $( "#main-page-content" ).fadeIn( 300, function(){});
+    $( "#page-content" ).fadeIn( 300, function(){});
+    $( "#standard-footer" ).fadeIn( 300, function() {});
   });
 }
