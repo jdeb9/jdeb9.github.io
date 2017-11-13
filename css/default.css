@@ -15,12 +15,14 @@ header, body, main {
 
 /* navbar logo image */
 .logo-img {
-    height: 64px;
+    height: 56px;
+    padding-top: 8px;
 }
 
 @media only screen and (max-width : 600px) {
   .logo-img {
-      height: 56px;
+      height: 48px;
+      padding-top: 8px;
   }
 }
 
