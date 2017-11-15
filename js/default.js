@@ -1,6 +1,10 @@
 
 $(document).ready(function(){
 
+  //set default page content
+  $( "#page-title" ).html( $( "#about-me-title" ).html() );
+  $( "#page-content" ).html( $( "#about-me" ).html() );
+
   // Activate the side menu
   $(".button-collapse").sideNav({
       menuWidth: 300, // Default is 300
@@ -12,21 +16,31 @@ $(document).ready(function(){
     }
   );
 
+  //navigation buttons + content setting
+  $( ".brand-logo" ).on( "click", function() {
+    updatePage($( "#about-me-title" ).html() , $( "#about-me" ).html());
+  });
+
+  $( "#about-link" ).on( "click", function() {
+    updatePage($( "#about-me-title" ).html() , $( "#about-me" ).html());
+  });
+
 });
 
+//update the page with specified content
 function updatePage(title, content) {
-  //hide title
-  $( "#page-title" ).fadeOut( 200, function() {});
-  $( "#standard-footer" ).fadeOut( 200, function() {});
+  //hide title and footer
+  $( "#page-title" ).fadeOut( 150, function() {});
+  $( "#standard-footer" ).fadeOut( 150, function() {});
 
-  //hide content
-  $( "#page-content" ).fadeOut( 200, function() {
+  //hide page content
+  $( "#page-content" ).fadeOut( 150, function() {
     //update content
     $( "#page-title" ).html(title);
     $( "#page-content" ).html(content);
 
-    $( "#page-title" ).fadeIn( 300, function() {});
-    $( "#page-content" ).fadeIn( 300, function(){});
-    $( "#standard-footer" ).fadeIn( 300, function() {});
+    $( "#page-title" ).fadeIn( 200, function() {});
+    $( "#page-content" ).fadeIn( 200, function(){});
+    $( "#standard-footer" ).fadeIn( 200, function() {});
   });
 }
