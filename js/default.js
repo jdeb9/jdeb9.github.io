@@ -64,10 +64,12 @@ function updatePage(title, content) {
 
 function setActive(current_nav_link) {
   //deselect all other nav links
-  $( "#about-link" ).parent().removeClass("active");
-  $( "#projects-link" ).parent().removeClass("active");
-  $( "#studies-link" ).parent().removeClass("active");
-  $( "#contact-link" ).parent().removeClass("active");
+  document.getElementById( "about-link" ).parentNode.classList.remove("active");
+  document.getElementById( "projects-link" ).parentNode.classList.remove("active");
+  document.getElementById( "studies-link" ).parentNode.classList.remove("active");
+  document.getElementById( "contact-link" ).parentNode.classList.remove("active");
+  // classList.remove("CLASS_NAME");
+  // d.className += " otherclass";
 
   $(current_nav_link).parent().addClass("active");
 }
