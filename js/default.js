@@ -30,16 +30,19 @@ $(document).ready(function(){
   $( "#projects-link" ).on( "click", function() {
     setActive(event.target);
     updatePage($( "#projects-title" ).html() , $( "#projects" ).html());
+    alert("test1");
   });
 
   $( "#studies-link" ).on( "click", function() {
     setActive(event.target);
     updatePage($( "#studies-title" ).html() , $( "#studies" ).html());
+    alert("test2");
   });
 
   $( "#contact-link" ).on( "click", function() {
     setActive(event.target);
     updatePage($( "#contact-title" ).html() , $( "#contact" ).html());
+    alert("test3");
   });
 
 });
