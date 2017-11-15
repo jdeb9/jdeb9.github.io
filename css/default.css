@@ -34,7 +34,7 @@ header, body, main {
 /* card resizing */
 @media only screen and (min-width : 992px) {
   .about-me-card {
-    width: 120px;
+    width: 110px;
     float: left;
     margin-left: 20px;
   }
@@ -42,7 +42,7 @@ header, body, main {
 
 @media only screen and (min-width : 600px) and (max-width : 992px){
   .about-me-card {
-    width: 120px;
+    width: 110px;
     float: left;
     margin-left: 20px;
   }
