@@ -43,9 +43,41 @@ header, body, main {
   #full-page-title {
     font-size: 7.8vw;
     text-align: center;
+    margin-top: 5px;
+    margin-bottom: 0px;
+  }
+  #sidenav-profile {
+    visibility: visible;
+    width: 30%;
+    height: 100%;
+    margin-left: 35%;
+  }
+  #title-profile {
+    margin-top: 5px;
+    visibility: visible;
   }
 }
 
+@media only screen and (max-width : 992px){
+  .about-me-card {
+    width: 110px;
+    float: left;
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (min-width : 600px){
+  #sidenav-profile {
+    visibility: visible;
+    width: 50%;
+    height: 100%;
+    margin-left: 25%;
+  }
+  #title-profile {
+    visibility: hidden;
+    display: none;
+  }
+}
 
 /* footer resizing */
 
