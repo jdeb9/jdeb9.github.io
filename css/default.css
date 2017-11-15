@@ -65,7 +65,11 @@ header, body, main {
   margin-right: 10px;
 }
 
-/* page title scaling */
+/* page title */
+
+#page-title {
+  font-weight: 100;
+}
 
 @media only screen and (max-width : 600px) {
   #full-page-title {
