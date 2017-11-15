@@ -48,9 +48,9 @@ header, body, main {
   }
   #sidenav-profile {
     visibility: visible;
-    width: 30%;
+    width: 25%;
     height: 100%;
-    margin-left: 35%;
+    margin-left: 37.5%;
   }
   #title-profile {
     margin-top: 5px;
