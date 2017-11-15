@@ -2,6 +2,7 @@
 $(document).ready(function(){
 
   //set default page content
+  $( "#about-link" ).parent().addClass("active");
   $( "#page-title" ).html( $( "#about-me-title" ).html() );
   $( "#page-content" ).html( $( "#about-me" ).html() );
 
@@ -21,8 +22,24 @@ $(document).ready(function(){
     updatePage($( "#about-me-title" ).html() , $( "#about-me" ).html());
   });
 
-  $( "#about-link" ).on( "click", function() {
+  $( "#about-link" ).on( "click", function(event) {
+    setActive(event.target);
     updatePage($( "#about-me-title" ).html() , $( "#about-me" ).html());
+  });
+
+  $( "#projects-link" ).on( "click", function() {
+    setActive(event.target);
+    updatePage($( "#projects-title" ).html() , $( "#projects" ).html());
+  });
+
+  $( "#studies-link" ).on( "click", function() {
+    setActive(event.target);
+    updatePage($( "#studies-title" ).html() , $( "#studies" ).html());
+  });
+
+  $( "#contact-link" ).on( "click", function() {
+    setActive(event.target);
+    updatePage($( "#contact-title" ).html() , $( "#contact" ).html());
   });
 
 });
@@ -43,4 +60,14 @@ function updatePage(title, content) {
     $( "#page-content" ).fadeIn( 200, function(){});
     $( "#standard-footer" ).fadeIn( 200, function() {});
   });
+}
+
+function setActive(current_nav_link) {
+  //deselect all other nav links
+  $( "#about-link" ).parent().removeClass("active");
+  $( "#projects-link" ).parent().removeClass("active");
+  $( "#studies-link" ).parent().removeClass("active");
+  $( "#contact-link" ).parent().removeClass("active");
+
+  $(current_nav_link).parent().addClass("active");
 }

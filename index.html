@@ -1,61 +1,102 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-      <!--Import Google Icon Font-->
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
-      <link type="text/css" rel="stylesheet" href="css/default.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/default.css" media="screen,projection"/>
 
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-      <link rel="shortcut icon" href="images/favicon.png" />
-      <title>John Briggs - Portfolio</title>
-    </head>
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <title>John Briggs - Portfolio</title>
+  </head>
 
-    <body>
+  <body>
 
-      <!-- NAVBAR -->
-      <nav>
-        <div class="nav-wrapper blue-grey darken-4">
-          <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-          <a class="brand-logo center" id="logo-button"><div class="logo-img"><img class="square" style="height: 100%;" src="images/logo.svg"></div></a>
+    <!-- NAVBAR -->
+    <nav>
+      <div class="nav-wrapper blue-grey darken-4">
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+        <a class="brand-logo center" id="logo-button"><div class="logo-img"><img class="square" style="height: 100%;" src="images/logo.svg"></div></a>
+      </div>
+   </nav>
+
+   <!-- SIDENAV -->
+    <ul id="slide-out" class="side-nav fixed">
+      <li>
+        <div class="user-view center-align">
+          <div class="background"></div>
+          <a><img class="circle z-depth-2" style="width: 50%; height: 100%; margin-left: 25%;" src="images/profile.jpg"></a>
+          <a><span class="blue-grey-text text-darken-4 name">John Briggs</span></a>
+          <a href="mailto:jdeb10@gmail.com"><span class="blue-grey-text text-darken-3 email">jdeb10@gmail.com</span></a>
         </div>
-     </nav>
+      </li>
+      <li><a class="waves-effect" id="about-link">About Me</a></li>
+      <li><div class="divider"></div></li>
+      <li><a class="waves-effect" id="projects-link">Projects</a></li>
+      <li><a class="waves-effect" id="studies-link">Studies</a></li>
+      <li><div class="divider"></div></li>
+      <li><a class="waves-effect" id="contact-link">Contact</a></li>
+    </ul>
 
-     <!-- SIDENAV -->
-      <ul id="slide-out" class="side-nav fixed">
-        <li>
-          <div class="user-view center-align">
-            <div class="background"></div>
-            <a><img class="circle z-depth-2" style="width: 50%; height: 100%; margin-left: 25%;" src="images/profile.jpg"></a>
-            <a><span class="blue-grey-text text-darken-4 name">John Briggs</span></a>
-            <a href="mailto:jdeb10@gmail.com"><span class="blue-grey-text text-darken-3 email">jdeb10@gmail.com</span></a>
-          </div>
-        </li>
-        <li><a class="waves-effect" id="about-link">About Me</a></li>
-        <li><div class="divider"></div></li>
-        <li><a class="waves-effect" id="projects-link">Projects</a></li>
-        <li><a class="waves-effect" id="studies-link">Studies</a></li>
-        <li><div class="divider"></div></li>
-        <li><a class="waves-effect" id="contact-link">Contact</a></li>
-      </ul>
-
-      <!-- PAGE TITLE -->
-      <div id="page-title-area">
-        <div class="section blue-grey darken-3 white-text z-depth-3">
-          <div class="container">
-            <h3>John Briggs - <span id="page-title"></span></h3>
-          </div>
+    <!-- PAGE TITLE -->
+    <div id="page-title-area">
+      <div class="section blue-grey darken-3 white-text z-depth-3">
+        <div class="container">
+          <h3>John Briggs - <span id="page-title"></span></h3>
         </div>
       </div>
+    </div>
 
-      <!-- PAGE CONTENT -->
-      <div id="page-content">
+    <!-- PAGE CONTENT INSERT -->
+    <div id="page-content">
 
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="page-footer blue-grey darken-3" id="standard-footer">
+      <div class="container">
+        <div class="row">
+          <h5 class="white-text">Follow Me</h5>
+          <a href="https://www.linkedin.com/in/john-briggs-6b2203114/">
+            <div class="follow-button">
+              <img class="circle responsive-img hoverable tooltipped" data-position="bottom" data-delay="50" data-tooltip="LinkedIn" src="images/footer_logos/linkedin.png">
+            </div>
+          </a>
+          <a href="https://twitter.com/Jdeb9">
+            <div class="follow-button">
+              <img class="circle responsive-img hoverable tooltipped" data-position="bottom" data-delay="50" data-tooltip="Twitter" src="images/footer_logos/twitter.png">
+            </div>
+          </a>
+          <a href="https://github.com/jdeb9">
+            <div class="follow-button">
+              <img class="circle responsive-img hoverable tooltipped" data-position="bottom" data-delay="50" data-tooltip="Github" src="images/footer_logos/github.png">
+            </div>
+          </a>
+        </div>
       </div>
+      <div class="footer-copyright  blue-grey darken-4">
+        <div class="container">
+        © <script>
+            var current_date = new Date();
+            document.write(current_date.getYear() + 1900);
+        </script> John Briggs
+        </div>
+      </div>
+    </footer>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <!-- CUSTOM JS -->
+    <script type="text/javascript" src="js/default.js"></script>
+
+    <!-- PAGE CONTENT -->
 
       <!-- ABOUT ME PAGE -->
       <script id="about-me-title" type="text/html">
@@ -265,43 +306,26 @@
         </div>
       </script>
 
-      <!-- FOOTER -->
-      <footer class="page-footer blue-grey darken-3" id="standard-footer">
-        <div class="container">
-          <div class="row">
-            <h5 class="white-text">Follow Me</h5>
-            <a href="https://www.linkedin.com/in/john-briggs-6b2203114/">
-              <div class="follow-button">
-                <img class="circle responsive-img hoverable tooltipped" data-position="bottom" data-delay="50" data-tooltip="LinkedIn" src="images/footer_logos/linkedin.png">
-              </div>
-            </a>
-            <a href="https://twitter.com/Jdeb9">
-              <div class="follow-button">
-                <img class="circle responsive-img hoverable tooltipped" data-position="bottom" data-delay="50" data-tooltip="Twitter" src="images/footer_logos/twitter.png">
-              </div>
-            </a>
-            <a href="https://github.com/jdeb9">
-              <div class="follow-button">
-                <img class="circle responsive-img hoverable tooltipped" data-position="bottom" data-delay="50" data-tooltip="Github" src="images/footer_logos/github.png">
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="footer-copyright  blue-grey darken-4">
-          <div class="container">
-          © <script>
-              var current_date = new Date();
-              document.write(current_date.getYear() + 1900);
-          </script> John Briggs
-          </div>
-        </div>
-      </footer>
+      <!-- PROJECTS PAGE -->
+      <script id="projects-title" type="text/html">
+        Projects
+      </script>
+      <script id="projects" type="text/html">
+      </script>
 
-      <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <!-- STUDIES PAGE -->
+      <script id="studies-title" type="text/html">
+        Studies
+      </script>
+      <script id="studies" type="text/html">
+      </script>
 
-      <!-- CUSTOM JS -->
-      <script type="text/javascript" src="js/default.js"></script>
-    </body>
-  </html>
+      <!-- CONTACT PAGE -->
+      <script id="contact-title" type="text/html">
+        Contact
+      </script>
+      <script id="contact" type="text/html">
+      </script>
+
+  </body>
+</html>
