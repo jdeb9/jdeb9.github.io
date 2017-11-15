@@ -64,10 +64,10 @@ function updatePage(title, content) {
 
 function setActive(current_nav_link) {
   //deselect all other nav links
-  $( "#about-link" ).parent().removeClass("active");
-  $( "#projects-link" ).parent().removeClass("active");
-  $( "#studies-link" ).parent().removeClass("active");
-  $( "#contact-link" ).parent().removeClass("active");
+  // $( "#about-link" ).parent().removeClass("active");
+  // $( "#projects-link" ).parent().removeClass("active");
+  // $( "#studies-link" ).parent().removeClass("active");
+  // $( "#contact-link" ).parent().removeClass("active");
 
   $(current_nav_link).parent().addClass("active");
 }
