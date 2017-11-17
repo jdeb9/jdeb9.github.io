@@ -33,7 +33,7 @@ header, body, main {
 }
 
 
-/* page title */
+/* page title and sidenav*/
 
 #page-title {
   font-weight: 100;
@@ -47,10 +47,16 @@ header, body, main {
     margin-bottom: 0px;
   }
   #sidenav-profile {
-    visibility: visible;
+    visibility: hidden;
+    display: none;
+  }
+  #sidenav-logo {
     width: 25%;
     height: 100%;
-    margin-left: 37.5%;
+    margin-top: 10px;
+  }
+  #sidenav-name-label {
+    margin-top: 0px;
   }
   #title-profile {
     margin-top: 5px;
@@ -72,6 +78,10 @@ header, body, main {
     width: 50%;
     height: 100%;
     margin-left: 25%;
+  }
+  #sidenav-logo {
+    visibility: hidden;
+    display: none;
   }
   #title-profile {
     visibility: hidden;
