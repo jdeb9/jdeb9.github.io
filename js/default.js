@@ -32,10 +32,10 @@ $(document).ready(function(){
     updatePage($( "#projects-title" ).html() , $( "#projects" ).html());
   });
 
-  $( "#studies-link" ).on( "click", function() {
-    setActive(event.target);
-    updatePage($( "#studies-title" ).html() , $( "#studies" ).html());
-  });
+  // $( "#studies-link" ).on( "click", function() {
+  //   setActive(event.target);
+  //   updatePage($( "#studies-title" ).html() , $( "#studies" ).html());
+  // });
 
   $( "#contact-link" ).on( "click", function() {
     setActive(event.target);
@@ -66,7 +66,7 @@ function setActive(current_nav_link) {
   //deselect all other nav links
   document.getElementById( "about-link" ).parentNode.classList.remove("active");
   document.getElementById( "projects-link" ).parentNode.classList.remove("active");
-  document.getElementById( "studies-link" ).parentNode.classList.remove("active");
+  // document.getElementById( "studies-link" ).parentNode.classList.remove("active");
   document.getElementById( "contact-link" ).parentNode.classList.remove("active");
   // classList.remove("CLASS_NAME");
   // d.className += " otherclass";
