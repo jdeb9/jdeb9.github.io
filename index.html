@@ -324,126 +324,93 @@
           <div class="section">
             <div class="row">
               <div class="col s12 m6 l6">
-                <div class="card">
-                  <div class="card-image">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Hambledon_Hill_towards_Stourton_Tower_20070730.jpg/250px-Hambledon_Hill_towards_Stourton_Tower_20070730.jpg">
+                <a class="project-card-link" data-page="grooveq">
+                  <div class="card hoverable">
+                    <div class="card-image">
+                      <img src="images/projects/grooveq/cover.png">
+                    </div>
+                    <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">GrooveQ Mobile Website</span>
+                      <p class="blue-grey-text text-darken-4">A type website frontend backend for trackning this, this and this.</p>
+                    </div>
+                    <div class="card-action">
+                      <span class="blue-grey-text text-darken-1 project-card-link">CLICK FOR DETAILS</span>
+                    </div>
                   </div>
-                  <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">GrooveQ Mobile Website</span>
-                    <p>A type website frontend backend for trackning this, this and this.</p>
-                  </div>
-                  <div class="card-action">
-                    <a href="#" class="blue-grey-text text-darken-1 project-card-link">Details</a>
-                  </div>
-                </div>
+                </a>
               </div>
               <div class="col s12 m6 l6">
-                <div class="card">
-                  <div class="card-image">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Hambledon_Hill_towards_Stourton_Tower_20070730.jpg/250px-Hambledon_Hill_towards_Stourton_Tower_20070730.jpg">
+                <a class="project-card-link" data-page="trackmymeds">
+                  <div class="card hoverable">
+                    <div class="card-image">
+                      <img src="images/projects/trackmymeds/cover.png">
+                    </div>
+                    <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">TrackMyMeds Service - QUT</span>
+                      <p class="blue-grey-text text-darken-4">A type website frontend backend for trackning this, this and this.</p>
+                    </div>
+                    <div class="card-action">
+                      <span class="blue-grey-text text-darken-1 project-card-link">CLICK FOR DETAILS</span>
+                    </div>
                   </div>
-                  <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">TrackMyMeds Service - QUT</span>
-                    <p>A type website frontend backend for trackning this, this and this.</p>
-                  </div>
-                  <div class="card-action">
-                    <a href="#" class="blue-grey-text text-darken-1 project-card-link">Details</a>
-                  </div>
-                </div>
+                </a>
               </div>
               <div class="col s12 m6 l6">
-                <div class="card">
-                  <div class="card-image">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Hambledon_Hill_towards_Stourton_Tower_20070730.jpg/250px-Hambledon_Hill_towards_Stourton_Tower_20070730.jpg">
+                <a class="project-card-link" data-page="mindfree">
+                  <div class="card hoverable">
+                    <div class="card-image">
+                      <img src="images/projects/mindfree/cover.png">
+                    </div>
+                    <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Mindfree - QUT</span>
+                      <p class="blue-grey-text text-darken-4">A type website frontend backend for trackning this, this and this.</p>
+                    </div>
+                    <div class="card-action">
+                      <span class="blue-grey-text text-darken-1 project-card-link">CLICK FOR DETAILS</span>
+                    </div>
                   </div>
-                  <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Mindfree - QUT</span>
-                    <p>A type website frontend backend for trackning this, this and this.</p>
-                  </div>
-                  <div class="card-action">
-                    <a href="#" class="blue-grey-text text-darken-1 project-card-link">Details</a>
-                  </div>
-                </div>
+                </a>
               </div>
               <div class="col s12 m6 l6">
-                <div class="card">
-                  <div class="card-image">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Hambledon_Hill_towards_Stourton_Tower_20070730.jpg/250px-Hambledon_Hill_towards_Stourton_Tower_20070730.jpg">
+                <a class="project-card-link" data-page="portfolio">
+                  <div class="card hoverable">
+                    <div class="card-image">
+                      <img src="images/projects/portfolio/cover.png">
+                    </div>
+                    <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Portfolio</span>
+                      <p class="blue-grey-text text-darken-4">A type website frontend backend for trackning this, this and this.</p>
+                    </div>
+                    <div class="card-action">
+                      <span class="blue-grey-text text-darken-1 project-card-link">CLICK FOR DETAILS</span>
+                    </div>
                   </div>
-                  <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Portfolio</span>
-                    <p>A type website frontend backend for trackning this, this and this.</p>
-                  </div>
-                  <div class="card-action">
-                    <a href="#" class="blue-grey-text text-darken-1 project-card-link">Details</a>
-                  </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>
         </div>
+
+        <script type="text/javascript">
+          $( ".project-card-link" ).on( "click", function() {
+            updatePage($( "#" + $(this).data("page") + "-project-title" ).html() , $( "#" + $(this).data("page") + "-project" ).html());
+          });
+        </script>
       </script>
 
       <!-- STUDIES PAGE -->
-      <script id="studies-title" type="text/html">
+      <!-- <script id="studies-title" type="text/html">
         Studies
       </script>
       <script id="studies" type="text/html">
         CONTENT
-      </script>
+      </script> -->
 
       <!-- CONTACT PAGE -->
       <script id="contact-title" type="text/html">
         Contact
       </script>
       <script id="contact" type="text/html">
-        <!-- <div class="container">
-          <div class="section black-text">
-            <div class="row center-align">
-              <div class="col s12 m4 hoverable">
-                <a href="#" class="black-text" style="font-weight: 400; text-transform: uppercase;">
-                  <div class="valign-wrapper" style="width: 180px; margin: 0 auto;">
-                    <i class="fa fa-phone fa-3x" aria-hidden="true" style="margin: 0px 20px 0px 3px;"></i>+61&nbsp;4071&nbsp;157052
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div class="row center-align">
-              <div class="col s12 m4 hoverable">
-                <a href="#" class="black-text" style="font-weight: 400;">
-                  <div class="valign-wrapper" style="width: 180px; margin: 0 auto;">
-                    <i class="fa fa-envelope fa-3x" aria-hidden="true" style="margin: 0px 15px 0px 0px;"></i>Jdeb10@gmail.com
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="section black-text">
-            <div class="row center-align">
-              <div class="col s12 m4 hoverable">
-                <a href="#" class="black-text" style="font-weight: 400; text-transform: uppercase;">
-                  <div class="valign-wrapper" style="width: 125px; margin: 0 auto;">
-                    <i class="fa fa-linkedin-square fa-4x" aria-hidden="true" style="margin: 0px 15px 0px 0px;"></i>LinkedIn
-                  </div>
-                </a>
-              </div>
-              <div class="col s12 m4 hoverable">
-                <a href="#" class="black-text" style="font-weight: 400; text-transform: uppercase;">
-                  <div class="valign-wrapper text-center" style="width: 125px; margin: 0 auto;">
-                    <i class="fa fa-github fa-4x" aria-hidden="true" style="margin: 0px 15px 0px 0px;"></i>GitHub
-                  </div>
-                </a>
-              </div>
-              <div class="col s12 m4 hoverable">
-                <a href="#" class="black-text" style="font-weight: 400; text-transform: uppercase;">
-                  <div class="valign-wrapper text-center" style="width: 125px; margin: 0 auto;">
-                    <i class="fa fa-twitter fa-4x" aria-hidden="true" style="margin: 0px 15px 0px 0px;"></i>Twitter
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div> -->
         <div class="container">
           <div class="section black-text" style="margin-top: 15px;">
             <div class="row center-align">
@@ -495,6 +462,42 @@
             </div>
           </div>
         </div>
+      </script>
+
+      <!--
+        PROJECT PAGES
+      -->
+
+      <!-- GROOVEQ PROJECT -->
+      <script id="grooveq-project-title" type="text/html">
+        GrooveQ Mobile Website
+      </script>
+      <script id="grooveq-project" type="text/html">
+        CONTENT
+      </script>
+
+      <!-- TRACKMYMEDS PROJECT -->
+      <script id="trackmymeds-project-title" type="text/html">
+        TrackMyMeds - QUT Project
+      </script>
+      <script id="trackmymeds-project" type="text/html">
+        CONTENT
+      </script>
+
+      <!-- MINDFREE PROJECT -->
+      <script id="mindfree-project-title" type="text/html">
+        Mindfree - QUT Project
+      </script>
+      <script id="mindfree-project" type="text/html">
+        CONTENT
+      </script>
+
+      <!-- PORTFOLIO PROJECT -->
+      <script id="portfolio-project-title" type="text/html">
+        Portfolio
+      </script>
+      <script id="portfolio-project" type="text/html">
+        CONTENT
       </script>
 
   </body>

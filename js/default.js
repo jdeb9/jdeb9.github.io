@@ -68,8 +68,6 @@ function setActive(current_nav_link) {
   document.getElementById( "projects-link" ).parentNode.classList.remove("active");
   // document.getElementById( "studies-link" ).parentNode.classList.remove("active");
   document.getElementById( "contact-link" ).parentNode.classList.remove("active");
-  // classList.remove("CLASS_NAME");
-  // d.className += " otherclass";
 
   $(current_nav_link).parent().addClass("active");
 }
