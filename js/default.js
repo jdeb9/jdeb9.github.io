@@ -56,6 +56,9 @@ function updatePage(title, content) {
     $( "#page-title" ).html(title);
     $( "#page-content" ).html(content);
 
+    //scroll user back to top of page
+    $('html,body').scrollTop(0);
+
     $( "#page-title" ).fadeIn( 200, function() {});
     $( "#page-content" ).fadeIn( 200, function(){});
     $( "#standard-footer" ).fadeIn( 200, function() {});
