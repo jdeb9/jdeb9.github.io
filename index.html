@@ -538,10 +538,12 @@
           <div class="divider"></div>
           <div class="section">
             <h4 class="blue-grey-text text-darken-1">Demo</h4>
-            Android Emulator used to capture screen recording.
-            <div class="video-container">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/nCJ6zmfMdfU?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-            </div>
+            <p>
+              Android Emulator used to capture screen recording.
+              <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/nCJ6zmfMdfU?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </p>
           </div>
         </div>
       </script>
@@ -600,9 +602,9 @@
                 <div class="col s12 m6 l7">
                   <ul class="browser-default">
                     Website:
-                    <li>Bootrap Layout</li>
+                    <li>Boostrap Framework layout (Grid System) and styling (navigation bar)</li>
                     <li>Minimum number of UI elements possible</li>
-
+                    <li>Login directs to user's personal account page where the user can reach all other features</li>
                   </ul>
                 </div>
                 <div class="col s12 m6 l5">
@@ -620,10 +622,10 @@
                 <div class="col s12 m8 l9">
                   <ul class="browser-default">
                     iOS App:
-                    <li>Account login + logout</li>
-                    <li>Taking (and undo taking) scheduled medications</li>
-                    <li>List and detail view of user's entire medication schedule (with custom nicknames for each medication)</li>
-                    <li>Push notification reminders for scheduled medications</li>
+                    <li>Page navigation with basic Tab Bar design</li>
+                    <li>Navigation between pages within tabs utilizes Navigation Controller (includes contextual 'Back' button and swipe from left to go back)</li>
+                    <li>Status bar permanently visible in absense of full screen media (as per Apple's <a href="https://developer.apple.com/ios/human-interface-guidelines/bars/status-bars/" class="blue-grey-text text-darken-2" style="text-transform: uppercase;">iOS11 UI Guidelines</a>)</li>
+
                   </ul>
                 </div>
                 <div class="col s8 offset-s2 m4 l3">
@@ -644,10 +646,17 @@
             <h4 class="blue-grey-text text-darken-1">Challenges</h4>
             <p>
               <ul class="browser-default">
-                <li>Poor Vimeo video embedd support (to gravitate mobile users towards their app, which the client wished to avoid)</li>
-                <li>Mobile quality/performance balancing</li>
-                <li>Site scalability consistency</li>
+                Website:
+                <li>Development of Web API</li>
               </ul>
+              <ul class="browser-default">
+                iOS App:
+                <li>Integration with Web API</li>
+                <li>Medication Notifications</li>
+              </ul>
+            </p>
+            <p>
+              The development of the Web API posed a challenge as our development team was not experienced in implementing such a system. However, the use of Laravel assisted in making this process easy to learn through its simple array-to-JSON functionality, allowing us to focus on learning how design the structure of our API functionality.
             </p>
           </div>
           <div class="divider"></div>
@@ -655,7 +664,10 @@
             <h4 class="blue-grey-text text-darken-1">Implementation</h4>
             <p>
               Technologies chosen:
+            </p>
+            <p>
               <ul class="browser-default">
+                Website:
                 <li>HTML5, CSS3</li>
                 <li>Bootrap Front-end Framework</li>
                 <li>Laravel 4.2 Back-end Framework</li>
@@ -663,18 +675,66 @@
               </ul>
             </p>
             <p>
-            The <a href="https://alvarotrigo.com/fullPage/" class="blue-grey-text text-darken-2" style="text-transform: uppercase;">Fullpage.js</a> library was used to create sections within the web page, which also provided for mobile-friendly smoothed animations when transitioning between these sections. This library was chosen as the primary <a href="https://www.grooveq.com.au/" class="blue-grey-text text-darken-2" style="text-transform: uppercase;">GrooveQ</a> Website which features heavy Javascript animations to transform the page as the user scrolls. By creating these sections, with transitional animations, the mobile website was able to reflect the overall impression given by the primary site, albeit in a lighter, mobile-friendly manner.
+              Laravel 4.2 hosted with Fortrabbit had proven successful in prior experiences, and so it was chosen to allow us to quickly set up a functional website and allow us to focus on developing our product. While 2 of the 4 members of the team were software developers (including myself), and while both of us were capable neither of us specialised in front-end development, meaning opting for a more custom design could be time-costly. We opted to use the Bootstrap framework to hasten the development of the visual design of the website, so we could focus on adding value to our product through features.
             </p>
             <p>
-              Laravel 4.2 was chosen as I had prior experience with the Framework and the existing GrooveQ primary site was being hosted with Fortrabbit, whom specialise in Laravel hosting. This allowed for a fast setup of page routing and a basic back-end CMS.
+              <ul class="browser-default">
+                iOS App:
+                <li>Xcode 8 IDE (Xcode 9 on release) with iOS Simulator</li>
+                <li>Swift 3 (upgraded to Swift 4 upon release)</li>
+              </ul>
             </p>
           </div>
           <div class="divider"></div>
           <div class="section">
-            <h4 class="blue-grey-text text-darken-1">Demo</h4>
-
+            <h4 class="blue-grey-text text-darken-1">Demos</h4>
+            <p>
+              <h5 class="blue-grey-text text-darken-1">iOS App:</h5>
+              <div class="slider">
+                <ul class="slides">
+                  <li>
+                    <img src="images/projects/trackmymeds/ios_screenshots/trackmymeds_ios_login.png">
+                  </li>
+                  <li>
+                    <img src="images/projects/trackmymeds/ios_screenshots/trackmymeds_ios_notification_prompt.png">
+                  </li>
+                  <li>
+                    <img src="images/projects/trackmymeds/ios_screenshots/trackmymeds_ios_daily.png">
+                  </li>
+                  <li>
+                    <img src="images/projects/trackmymeds/ios_screenshots/trackmymeds_ios_daily_take.png">
+                  </li>
+                  <li>
+                    <img src="images/projects/trackmymeds/ios_screenshots/trackmymeds_ios_schedule.png">
+                  </li>
+                  <li>
+                    <img src="images/projects/trackmymeds/ios_screenshots/trackmymeds_ios_schedule_detail.png">
+                  </li>
+                  <li>
+                    <img src="images/projects/trackmymeds/ios_screenshots/trackmymeds_ios_schedule_edit.png">
+                  </li>
+                  <li>
+                    <img src="images/projects/trackmymeds/ios_screenshots/trackmymeds_ios_remove.png">
+                  </li>
+                  <li>
+                    <img src="images/projects/trackmymeds/ios_screenshots/trackmymeds_ios_remove_prompt.png">
+                  </li>
+                </ul>
+              </div>
+            </p>
+            <p>
+              The following is a physical device demonstration with an emphasis on notification features. Notification timing and snooze delays have been specified and reduced respectively for demonstration purposes. Various interactions can be seen such as callbacks within the app when a notification arrives and the list of the user's daily medications is updated as per their action.
+              <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/e3w7C4EmKYw?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </p>
           </div>
         </div>
+
+        <script type="text/text/javascript">
+          $('.slider').slider();
+        </script>
+
       </script>
 
       <!-- MINDFREE PROJECT -->

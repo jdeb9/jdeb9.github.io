@@ -1,10 +1,13 @@
-
 $(document).ready(function(){
 
   //set default page content
   $( "#about-link" ).parent().addClass("active");
   $( "#page-title" ).html( $( "#about-me-title" ).html() );
   $( "#page-content" ).html( $( "#about-me" ).html() );
+
+  $( ".project-card-link" ).on( "click", function() {
+    updatePage($( "#" + $(this).data("page") + "-project-title" ).html() , $( "#" + $(this).data("page") + "-project" ).html());
+  });
 
   // Activate the side menu
   $(".button-collapse").sideNav({
