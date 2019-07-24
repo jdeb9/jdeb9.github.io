@@ -1,3 +1,5 @@
 # jdeb9.github.io
 
-jQuery portfolio. I wrote this very quickly quite a while ago and is overdue for a complete remake.
+Static single page site written with jQuery. I did terrible things involving grabbing hidden pieces of HTML and rendering them on event.
+
+I wrote this very quickly quite a while ago, never fully finished, and is due for a complete remake.
