@@ -1,5 +1,5 @@
 # jdeb9.github.io
 
-Static single page site written with jQuery to showcase some of my experience. The code is bad and this project is old.
+Static single page site written with jQuery as a basic digital portfolio. It's pretty hacky and an old reflection on my skillset.
 
-However, my LinkedIn contains the latest information on what I'm up to and my current skillset.
+However, if you wish to get in contact with me, my LinkedIn is always up to date.
