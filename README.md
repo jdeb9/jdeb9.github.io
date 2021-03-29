@@ -1,5 +1,3 @@
 # jdeb9.github.io
 
-Static single page site written with jQuery as a basic digital portfolio. It's pretty hacky and an old reflection on my skillset.
-
-However, if you wish to get in contact with me, my LinkedIn is always up to date.
+Hacky single page app written in jQuery. Portfolio is pending a rebuild as this no longer reflects my current experience and skillset (see LinkedIn).
